@@ -60,6 +60,14 @@ nav.navbar {
   .pizza.active {
     display: flex;
   }
+
+  .page2 > p{
+    margin: 1rem;
+  }
+
+  .hed > p{
+    margin: 1rem;
+  }
 }
 
 /* Desktop Only */
@@ -71,6 +79,7 @@ nav.navbar {
     display: flex;
     gap: 1rem;
   }
+
 }
 
 .footer{
@@ -417,6 +426,7 @@ img {
   color: rgba(0,0,0,.84);
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+
 }
 
 .list2 > li{
@@ -466,7 +476,8 @@ figure {
 figure figcaption {
   color: #666;
   font-style: italic;
-  font-size: 0.8em;
+  font-size: 1.2em;
+  margin-top: 1rem;
 }
 
 /*PAGE 1 CSS*/
@@ -485,7 +496,8 @@ width:100%;
 .P2_fig figcaption {
   color: #666;
   font-style: italic;
-  font-size: 0.8em;
+  font-size: 1.2em;
+  margin-top: 1rem;
 }
 
 
@@ -524,15 +536,20 @@ width:100%;
     color: rgba(0,0,0,.84);
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
+
 }
 
+.P1_a{
+  color: #006997;
+  text-decoration: underline 2px solid #006997;
+}
 /*PAGE 1 CSS END*/
 
 
 .page2 {
   display: grid;
-  /* I'm using 440px instead of 740px as it makes it easier to view it in the Scrimba simulator additive-symbols: */
-  grid-template-columns: 1fr 1fr 10px 440px 10px 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1rem 20rem 1rem 1fr 1fr;
+  width: 100vw;
 }
 
 .page2 > * {
