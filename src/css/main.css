@@ -341,17 +341,17 @@ img {
 }
 
 .card-with-overlay h1{
-  font-size: 3.5rem;
+  font-size: 3.5em;
   margin-top: 2rem;
 }
 
 .card-with-overlay .bottom_h1{
   margin-bottom: 2rem;
   margin-top: 0;
-  font-size: 3.5rem;
+  font-size: 3.5em;
 }
 .card-with-overlay p{
-  font-size: 1.2rem; 
+  font-size: 1.2em; 
 }
 
 @media (max-width: 60em){
@@ -468,6 +468,65 @@ figure figcaption {
   font-style: italic;
   font-size: 0.8em;
 }
+
+/*PAGE 1 CSS*/
+.P2_fig {
+  margin: 0;
+  display: grid;
+  grid-column-start: 2;
+  grid-column-end: 7;
+}
+
+.P2_fig img{
+width:100%;
+}
+
+
+.P2_fig figcaption {
+  color: #666;
+  font-style: italic;
+  font-size: 0.8em;
+}
+
+
+.hed{
+  border-bottom: 1px solid black;
+}
+
+.hed > h1 {
+    font-size: 2.625rem;
+    line-height: 1.1;
+    font-family: 'Tiempos Headline', sans-serif;
+}
+
+.hed > h2 {
+    font-size: 1.3rem;
+    line-height: 1.1;
+    font-family: 'Tiempos Headline', sans-serif;
+    font-weight: 400;
+}
+
+.byline{
+    font-family: Georgia;
+    font-size: 1rem;
+}
+
+.hed > p {    
+    --x-height-multiplier: 0.375;
+    --baseline-multiplier: 0.17;
+    font-family: Georgia;
+    letter-spacing: .01rem;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.3rem;
+    line-height: 1.58;
+    letter-spacing: -.003em;
+    color: rgba(0,0,0,.84);
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+/*PAGE 1 CSS END*/
 
 
 .page2 {
