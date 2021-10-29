@@ -16,3 +16,18 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 } 
+
+
+// Reference hamburger icon
+var button = document.getElementsByClassName("hamburger");
+var ul = document.getElementsByClassName("pizza");
+
+// Show nav
+function toggle() {
+  ul.classList.toggle("active");
+}
+
+// Wire up the event
+button.addEventListener("click", toggle);
+
+
