@@ -68,6 +68,10 @@ nav.navbar {
   .hed > p{
     margin: 1rem;
   }
+
+  figure figcaption, .P2_fig figcaption{
+    margin: 1rem 1rem 1rem 1rem;
+  }
 }
 
 /* Desktop Only */
@@ -398,19 +402,32 @@ img {
 .page2 > h1 {
   font-size: 2.625rem;
   line-height: 1.1;
-  font-family: 'Tiempos Headline', sans-serif;
+  font-family: 'Tiempos Headline', Georgia, serif;
 }
 
 .page2 > h2 {
   font-size: 1.3rem;
-  line-height: 1.1;
-  font-family: 'Tiempos Headline', sans-serif;
+  line-height: 1.3;
+  font-family: 'Tiempos Headline', Georgia, serif;
   font-weight: 400;
 }
 
 .byline{
   font-family: Georgia;
   font-size: 1rem;
+  margin: 0;
+  --x-height-multiplier: 0.375;
+  --baseline-multiplier: 0.17;
+  font-family: Georgia;
+  letter-spacing: .01rem;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.3rem;
+  line-height: 1.58;
+  letter-spacing: -.003em;
+  color: rgba(0,0,0,.84);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
 
 .page2 > p {    
@@ -508,20 +525,17 @@ width:100%;
 .hed > h1 {
     font-size: 2.625rem;
     line-height: 1.1;
-    font-family: 'Tiempos Headline', sans-serif;
+    font-family: 'Tiempos Headline', Georgia, serif;
 }
 
 .hed > h2 {
     font-size: 1.3rem;
-    line-height: 1.1;
-    font-family: 'Tiempos Headline', sans-serif;
+    line-height: 1.3;
+    font-family: 'Tiempos Headline', Georgia, serif;
     font-weight: 400;
 }
 
-.byline{
-    font-family: Georgia;
-    font-size: 1rem;
-}
+
 
 .hed > p {    
     --x-height-multiplier: 0.375;
@@ -537,6 +551,24 @@ width:100%;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
 
+}
+
+.byline{
+  font-family: Georgia;
+  font-size: 1rem;
+  margin: 0;
+  --x-height-multiplier: 0.375;
+  --baseline-multiplier: 0.17;
+  font-family: Georgia;
+  letter-spacing: .01rem;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.3rem;
+  line-height: 1.58;
+  letter-spacing: -.003em;
+  color: rgba(0,0,0,.84);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
 
 .P1_a{
