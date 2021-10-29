@@ -2,7 +2,7 @@
 
 # Chasing An Edge
 
-I created this website based on ProPublica's investigation of the same name. Content is taken from ProPublica, Unsplash and YouTube. None of it is mine.
+I created this website based on ProPublica's investigation of doping and illicit drug use in track and field. Content is taken from ProPublica, Unsplash and YouTube. None of it is mine.
 
 ProPublica's investigation: https://www.propublica.org/series/chasing-an-edge
 
