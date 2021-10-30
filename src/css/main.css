@@ -138,7 +138,7 @@ body{
 
 .article-container{
   display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-columns: 1.5fr 3fr 1fr;
   gap: 2rem;
   
 
@@ -253,8 +253,8 @@ body{
 
 
 .accordion {
-  background-color: #eee;
-  color: #444;
+  background-color: #99544F;
+  color: white;
   cursor: pointer;
   padding: 18px;
   width: 100%;
@@ -265,16 +265,21 @@ body{
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .accordion:hover {
-  background-color: #ccc;
+.accordion:hover {
+  background-color: #011961;
 }
+
 
 /* Style the accordion panel. Note: hidden by default */
 .panel {
   padding: 0 18px;
-  background-color: white;
+  background-color: #011961;
   display: none;
   overflow: hidden;
+}
+
+.panel > p{
+  color: white;
 }
 
 /*
@@ -391,7 +396,11 @@ img {
     flex-direction: column;
   }
   /*
-      Even though this puts the main article ahead of  
+      Even though this puts the main article ahead of the top headlines
+      when switching to mobile, it messes up the navbar because it disconnects
+      the css display and html dom. I couldn't find a way around this besides 
+      altering the z-index so I just made a choice to keep the navbar intact
+      and have top headling card be above the main card upon resize.
   .article-container :nth-child(1){
     order: 2;
   }
@@ -631,7 +640,14 @@ iframe.video{
 }
 
 .FAQ{
-  background-color: #99544F;
+  background-color: #011961;
+  margin-bottom: 5rem;
+}
+
+.FAQ h1{
+  display: flex;
+  justify-content: center;
+  color: white;
 }
 
 .icon{

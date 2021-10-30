@@ -27,15 +27,12 @@ var ul = document.getElementById("pizza");
 
 // Show nav
 function toggle() {
-  
+  ul.classList.toggle("active");
+  console.log("toggled");
 }
 
 // Wire up the event
-button.addEventListener("click", function(){
-  ul.classList.toggle("active");
-  console.log("toggled");
-
-});
+button.addEventListener("click", toggle);
 
 
 
