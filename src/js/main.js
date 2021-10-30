@@ -32,7 +32,7 @@ function toggle() {
 
 // Wire up the event
 button.addEventListener("click", function(){
-  /*ul.classList.toggle("active");*/
+  ul.classList.toggle("active");
   console.log("toggled");
 
 });
