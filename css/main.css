@@ -1,5 +1,12 @@
+:root{
+  --dark-blue: #011961;
+  --light-blue: #f0f4fb;
+  --maroon: #99544F;
+}
 
 /*GLOBAL CSS START*/
+
+/*Navbar*/
 nav.navbar {
   display: flex;
   justify-content: space-between;
@@ -8,7 +15,7 @@ nav.navbar {
   position: relative;
   box-shadow: 0 0 0.25rem 0 rgba(0, 0, 0, 0.15);
   min-height: 2.25rem;
-  background-color: #011961;
+  background-color: var(--dark-blue);
   width: 100vw;
 }
   
@@ -46,15 +53,16 @@ nav.navbar {
 
 
 .navbar li:hover{
-  background-color: #99544F;
+  background-color: var(--maroon);
 }
 
 
 /* Mobile Only */
 @media(max-width: 39.9375em) {
+  /*Adjust navbar*/
   .navbar ul {
     display: none;
-    background: #011961;
+    background: var(--dark-blue);
     padding: 1rem;
     flex-direction: column;
     gap: 0.75rem;
@@ -63,10 +71,18 @@ nav.navbar {
     top: 100%;
     left: 0;
   }
+
+  /*Get rid of subtitle paragraph on mobile to save space and make for a cleaner alignment*/
+  /*Still have the real intro paragraph for reference and mobile users*/
+  #intro{
+    display: none;
+  }
   
   .pizza.active {
     display: flex;
   }
+
+  /*END GLOBAL CSS*/
 
   .page2 > p{
     margin: 1rem;
@@ -94,7 +110,7 @@ nav.navbar {
 }
 
 .footer{
-  background-color: #99544F;
+  background-color: var(--maroon);
   width: 100%;
   height: 3rem;
   display: flex;
@@ -112,15 +128,15 @@ nav.navbar {
   text-decoration: none;
 }
 
-/*GLOBAL CSS END*/
 
 body{
   font-family: Georgia;
   font-size: 100%;
   font-size: 16px;
   line-height: 1.5;
-  background: #f0f4fb;
+  background: var(--light-blue);
  
+/*GLOBAL CSS END*/
 
 }
 
@@ -204,12 +220,12 @@ body{
 .article-content .card-title{
  margin-top: 0;
  margin-bottom: 1rem;
- color: #011961;
+ color: var(--dark-blue);
 }
 
 .article-content .card-title_headlines{
   margin: 0;
-  color: #011961;
+  color: var(--dark-blue);
  }
 
 .article-content .card-excerpt{
@@ -228,7 +244,7 @@ body{
 
 .header {
   
-  background: #011961;
+  background: var(--dark-blue);
   color: white;
   text-align: center;
   font-family: Georgia;
@@ -237,12 +253,6 @@ body{
 
 }
 
-/*HOMEPAGE CSS END*/
-
-
-
-
-
 .big-card{
     background: white;
     border-radius: 20px;
@@ -250,10 +260,11 @@ body{
 
 }
 
+/*HOMEPAGE CSS END*/
 
-
+/*PAGE 3 CSS START*/
 .accordion {
-  background-color: #99544F;
+  background-color: var(--maroon);
   color: white;
   cursor: pointer;
   padding: 18px;
@@ -264,16 +275,13 @@ body{
   transition: 0.4s;
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .accordion:hover {
-  background-color: #011961;
+  background-color: var(--dark-blue);
 }
 
-
-/* Style the accordion panel. Note: hidden by default */
 .panel {
   padding: 0 18px;
-  background-color: #011961;
+  background-color: var(--dark-blue);
   display: none;
   overflow: hidden;
 }
@@ -281,61 +289,6 @@ body{
 .panel > p{
   color: white;
 }
-
-/*
-.grid {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(10, 5rem);
-}
-
-
-.aside {
-  background: blue;
-  grid-row-start: 5;
-  grid-row-end: 7;
-  grid-column-start: 2;
-  grid-column-end: 3;
-}
-
-.nav {
-  background: purple;
-  grid-row-start: 2;
-  grid-row-end: 5;
-  grid-column-start: 2;
-  grid-column-end: 3;
-}
-
-.nav h1{
-  font-family: Georgia, serif;
-  font-size: 2em;
-  font-weight: bold;
-}
-
-.nav p{
-  font-family: Georgia, serif;
-  font-size: 1em;
-}
-
-.main {
-  background: green;
-  grid-row-start: 2;
-  grid-row-end: 7;
-  grid-column-start: 3;
-  grid-column-end: 5;
-}
-
-.vid{
-  background: pink;
-  grid-row-start: 7;
-  grid-row-end: 10;
-  grid-column-start: 2;
-  grid-column-end: 5;
-}
-
-*/
-
 
 iframe.video{
   width: 50%;
@@ -631,7 +584,7 @@ body{
   font-size: 100%;
   font-size: 16px;
   line-height: 1.5;
-  background: #f0f4fb;
+  background: var(--light-blue);
 }
 
 iframe.video{
@@ -640,7 +593,7 @@ iframe.video{
 }
 
 .FAQ{
-  background-color: #011961;
+  background-color: var(--dark-blue);
   margin-bottom: 5rem;
 }
 
@@ -654,4 +607,3 @@ iframe.video{
   aspect-ratio: 1;
   width: 3rem;
 }
-
