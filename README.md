@@ -1,6 +1,6 @@
 # Chasing An Edge
 
-I created this website as an assignment for a web development/journalism class (MEJO 187) I took at UNC Chapel Hill. The focus of the assignment was to experiment with front end layouts, specifically CSS grid. 
+I created this website as an assignment for a web development/journalism class (MEJO 187) I took at UNC Chapel Hill. The focus of the assignment was to experiment with front end layouts, specifically CSS grid and/or flexbox. 
 
 We had to create a website based on a piece of investigative journalism. I based mine on ProPublica's investigation of doping and illicit drug use in track and field. 
 
